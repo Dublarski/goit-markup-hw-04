@@ -1,0 +1,343 @@
+body {
+    font-family: Roboto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(33, 150, 243, 1);
+}
+
+:root {
+    --blue: rgba(33, 150, 243, 1);
+}
+
+.current {
+    color: var(--blue);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.company-logo {
+    font-size: 26px;
+}
+
+.logo-web-text {
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.logo-studio-text {
+    font-family: Raleway;
+    font-weight: 400;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+.logo-studio-text:hover {
+    color: rgba(33, 150, 243, 1);
+    transition: all 0.4s ease;
+}
+
+.logo-web-text {
+    color: rgba(33, 150, 243, 1);
+}
+
+header {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px rgba(236, 236, 236, 1);
+}
+
+.nav-buttons {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.header-buttons, .nav-contact-buttons {
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.nav-contact-buttons {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.solutions-section {
+    background-color: rgba(47, 48, 58, 1);
+    min-height: 600px;
+    padding-bottom: 94px;
+}
+
+.main-header {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.request-our-service-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 0.4s ease;
+}
+
+.request-our-service-button:hover {
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.request-our-service-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.company-skills-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.company-skills-text li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.company-skills-headers {
+    color: rgba(33, 33, 33, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 270px;
+}
+
+.company-skills-paragraphs {
+    color: rgba(117, 117, 117, 1);
+    font-size: 14px;
+    font-weight: 400;
+    width: 270px;
+    margin-bottom: 94px;
+}
+
+.what-we-do-header {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.what-we-do-ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.our-team-header {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.our-team-ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.colleague-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 90px;
+}
+
+.colleague-card:hover {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.colleague-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team-card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.colleague-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.portfolio-sorting-section {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.portfolio-sorting-buttons {
+    background-color: rgba(245, 244, 250, 1);
+    border: none;
+    color: black;
+    padding: 20px 26px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.portfolio-sorting-buttons:not(:last-child) {
+    border-right: none;
+}
+
+.portfolio-sorting-buttons:hover {
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: rgba(33, 150, 243, 1);
+    transform: translateY(-3px);
+}
+
+.portfolio-sorting-buttons:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-sorting-buttons:focus {
+    background-color: rgba(33, 150, 243, 1);
+    color: white;
+}
+
+.portfolio-card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.project-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    display: inline-block;
+    margin: 30px 30px;
+    border: 1px ;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-name, .project-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(47, 48, 58);
+    min-height: 100px;
+    padding: 30px 0px;
+}
+
+.footer-company-logo {
+    display: inline-block;
+    margin-left: 215px;
+    margin-bottom: 28px;
+    font-size: 26px;
+}
+
+.footer-logo-web-text {
+    font-family: Raleway;
+    font-weight: 700;
+    color: rgba(33, 150, 243, 1);
+}
+
+.footer-logo-studio-text {
+    font-family: Raleway;
+    font-weight: 400;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.footer-logo-studio-text:hover {
+    color: rgba(33, 150, 243, 1);
+    transition: all 0.4s ease;
+}
+
+.footer-span:not(:nth-child(1)) {
+    line-height: 2;
+    display: flex;
+    justify-content: left;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 215px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-span:nth-child(1) {
+    color: rgba(255, 255, 255, 1);
+    margin-left: 215px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
