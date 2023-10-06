@@ -76,7 +76,20 @@ header {
 
 .nav-contact-buttons {
     display: inline-block;
-    padding: 0px 30px;
+    margin: 0px 30px;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: #757575;
+    fill: #757575;
+}
+
+.icon-envelope {
+    width: 1.23046875em;
 }
 
 .solutions-section {
