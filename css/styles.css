@@ -96,6 +96,7 @@ header {
     background-color: rgba(47, 48, 58, 1);
     min-height: 600px;
     padding-bottom: 94px;
+    background-repeat: no-repeat;
 }
 
 .main-header {
@@ -301,6 +302,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.regular-customers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
