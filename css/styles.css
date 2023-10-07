@@ -179,7 +179,7 @@ header {
 .company-skills-section-divs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -252,14 +252,8 @@ header {
     padding-bottom: 50px;
 }
 
-.our-team-ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 .colleague-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition: all 0.4s ease;
     display: inline-block;
     margin-left: 30px;
@@ -290,6 +284,28 @@ header {
     align-items: center;
     font-weight: 400;
     font-size: 16px;
+}
+
+.colleague-social-media-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social-media-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    padding: 12px;
+}
+
+.social-media-icon:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+    fill: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
 }
 
 .portfolio-sorting-section {
@@ -373,21 +389,37 @@ header {
     margin-top: 50px;
     margin-bottom: 94px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .customers-div {
     border: 1px rgba(175, 177, 184, 1);
     width: 170px;
     height: 92px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.customer-icon:hover {
+    cursor: pointer;
+    color: var(--blue);
+    fill: white;
 }
 
 footer {
     background-color: rgb(47, 48, 58);
     min-height: 100px;
     padding: 30px 0px;
+}
+
+.footer-adresses-div {
+    display: inline-block;
 }
 
 .footer-company-logo {
@@ -434,4 +466,38 @@ footer {
     line-height: 16px;
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.find-us-on-section {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.footer-social-media-header {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-social-media-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-social-media-icons {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    padding: 12px;
+    color: #fff;
+}
+
+.footer-social-media-icons:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+    fill: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
 }
