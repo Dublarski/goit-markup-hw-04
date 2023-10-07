@@ -79,22 +79,47 @@ header {
     margin: 0px 30px;
 }
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: #757575;
-    fill: #757575;
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-envelope {
-    width: 1.23046875em;
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-envelope:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.icon-smartphone:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.contact-buttons-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-contact-div, .phone-number-contact-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .solutions-section {
     min-height: 600px;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/solutions-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -151,6 +176,22 @@ header {
     height: 70px;
 }
 
+.company-skills-section-divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.company-skills-section-divs:nth-child(1) {
+    margin-left: 30px;
+}
+
+.company-skills-section-divs:nth-child(4) {
+    margin-right: 30px;
+}
 
 .company-skills-divs {
     display: flex;
@@ -166,7 +207,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 120px;
 }
 
 .company-skills-text li {
