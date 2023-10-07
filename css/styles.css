@@ -93,10 +93,13 @@ header {
 }
 
 .solutions-section {
-    background-color: rgba(47, 48, 58, 1);
     min-height: 600px;
     padding-bottom: 94px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/solutions-background.jpg");
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .main-header {
@@ -141,6 +144,14 @@ header {
 .request-our-service-button:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.company-skills-divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
 }
 
 .company-skills-text {
