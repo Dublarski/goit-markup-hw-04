@@ -74,14 +74,15 @@ header {
     transition: all 0.4s ease;
 }
 
-.nav-contact-buttons {
+.nav-contact-buttons:nth-child(1) {
     display: inline-block;
-    margin: 0px 30px;
+    margin-right: 30px;
 }
 
 .icon-envelope {
     width: 16px;
     height: 12px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,19 +91,14 @@ header {
 .icon-smartphone {
     width: 10px;
     height: 16px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon-envelope:hover {
-    color: var(--blue);
-    cursor: pointer;
-}
-
-.icon-smartphone:hover {
-    color: var(--blue);
-    cursor: pointer;
+.email-contact-div:hover, .phone-number-contact-div:hover {
+    fill: var(--blue);
 }
 
 .contact-buttons-section {
@@ -293,19 +289,24 @@ header {
     margin-bottom: 30px;
 }
 
+.social-media-icon-div {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social-media-icon-div:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+    fill: #fff;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+}
+
 .social-media-icon {
     width: 20px;
     height: 20px;
     display: flex;
     padding: 12px;
-}
-
-.social-media-icon:hover {
-    cursor: pointer;
-    background-color: var(--blue);
-    fill: #fff;
-    border-radius: 50%;
-    transition: all 0.4s ease;
 }
 
 .portfolio-sorting-section {
@@ -398,12 +399,21 @@ header {
 }
 
 .customers-div {
-    border: 1px rgba(175, 177, 184, 1);
+    border: 1px solid rgba(175, 177, 184, 1);
     width: 170px;
     height: 92px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 4px;
+}
+
+.customer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 60px;
 }
 
 .customer-icon:hover {
@@ -479,25 +489,22 @@ footer {
     font-weight: 700;
 }
 
-.footer-social-media-div {
+.footer-social-media-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .footer-social-media-icons {
     width: 20px;
     height: 20px;
-    display: flex;
     padding: 12px;
     color: #fff;
 }
 
-.footer-social-media-icons:hover {
+.footer-social-media-div:hover {
     cursor: pointer;
     background-color: var(--blue);
-    fill: #fff;
     border-radius: 50%;
     transition: all 0.4s ease;
 }
