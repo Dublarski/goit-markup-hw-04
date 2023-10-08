@@ -290,7 +290,6 @@ header {
 }
 
 .social-media-icon-div {
-    padding: 8px;
     border-radius: 50%;
 }
 
@@ -408,18 +407,17 @@ header {
     border-radius: 4px;
 }
 
+.customers-div:hover {
+    cursor: pointer;
+    fill: var(--blue);
+}
+
 .customer-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 106px;
     height: 60px;
-}
-
-.customer-icon:hover {
-    cursor: pointer;
-    color: var(--blue);
-    fill: white;
 }
 
 footer {
@@ -499,6 +497,10 @@ footer {
     width: 20px;
     height: 20px;
     padding: 12px;
+    color: #fff;
+}
+
+.footer-social-media-div {
     color: #fff;
 }
 
