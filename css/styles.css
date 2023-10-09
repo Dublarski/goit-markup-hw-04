@@ -97,10 +97,6 @@ header {
     align-items: center;
 }
 
-.email-contact-div:hover, .phone-number-contact-div:hover {
-    fill: var(--blue);
-}
-
 .contact-buttons-section {
     display: flex;
     justify-content: center;
@@ -111,6 +107,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.4s ease;
+}
+
+.email-contact-div:hover,
+.phone-number-contact-div:hover {
+    fill: var(--blue);
+    transition: all 0.4s ease;
 }
 
 .solutions-section {
@@ -167,7 +170,10 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut {
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
     width: 70px;
     height: 70px;
 }
@@ -291,6 +297,7 @@ header {
 
 .social-media-icon-div {
     border-radius: 50%;
+    fill: #AFB1B8;
 }
 
 .social-media-icon-div:hover {
@@ -405,11 +412,14 @@ header {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 4px;
+    fill: #AFB1B8;
+    transition: all 0.4s ease;
 }
 
 .customers-div:hover {
     cursor: pointer;
     fill: var(--blue);
+    transition: all 0.4s ease;
 }
 
 .customer-icon {
@@ -497,16 +507,23 @@ footer {
     width: 20px;
     height: 20px;
     padding: 12px;
-    color: #fff;
+    fill: white;
 }
 
 .footer-social-media-div {
-    color: #fff;
+    background-color: #FFFFFF1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    transition: all 0.4s ease;
 }
 
 .footer-social-media-div:hover {
     cursor: pointer;
     background-color: var(--blue);
-    border-radius: 50%;
+    fill: #fff;
     transition: all 0.4s ease;
+    border-radius: 50%;
 }
