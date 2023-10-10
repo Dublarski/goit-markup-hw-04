@@ -334,10 +334,10 @@ header {
 .portfolio-sorting-section {
     margin: auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    align-items: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
 }
 
 .portfolio-sorting-buttons {
@@ -383,11 +383,11 @@ header {
 }
 
 .project-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     transition: all 0.4s ease;
     display: inline-block;
-    margin: 30px 30px;
-    border: 1px ;
+    margin: 20px 20px;
+    border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .project-card:hover {
@@ -437,6 +437,7 @@ header {
     cursor: pointer;
     fill: var(--blue);
     transition: all 0.4s ease;
+    border: 1px solid var(--blue);
 }
 
 .customer-icon {
