@@ -65,7 +65,7 @@
           YOUR BUSINESS
         </h1>
         <button
-          id="data-modal-open"
+          data-modal-open
           type="button"
           class="request-our-service-button"
         >
@@ -372,9 +372,10 @@
         </div>
       </div>
     </footer>
-    <div id="data-modal" class="modal">
+    <!-- Modal -->
+    <div data-modal class="modal is-hidden">
       <div class="modal-content">
-        <span id="data-modal-close" class="close">&times;</span>
+        <button data-modal-close class="close">&times;</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
