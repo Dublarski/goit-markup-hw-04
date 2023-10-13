@@ -416,8 +416,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding: 50px 50px;
+    gap: 8px;
 }
 
 .portfolio-sorting-buttons {
@@ -425,7 +425,6 @@ header {
     border: none;
     color: rgba(33, 33, 33, 1);
     padding: 10px 20px;
-    margin: 0 8px;
     cursor: pointer;
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -451,18 +450,22 @@ header {
     color: white;
 }
 
-.portfolio-card-section {
+.portfolio-ul{
+    padding: 30px 0;
+    width: 1200px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    margin: 0 auto;
 }
 
 .project-card {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
-    margin: 20px 20px;
 }
 
 .project-card:hover {
@@ -634,7 +637,6 @@ footer {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
     padding: 20px;
     width: 528px;
     height: 581px;
