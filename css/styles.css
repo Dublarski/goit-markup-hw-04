@@ -639,24 +639,33 @@ footer {
 }
 
 .modal-content {
+    position: relative;
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 8px;
     border: 1px solid #888;
     width: 528px;
     height: 581px;
+    border-radius: 4px;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
     text-decoration: none;
     cursor: pointer;
 }
