@@ -579,7 +579,7 @@ footer {
 
 .find-us-on-section {
     display: inline-block;
-    margin-left: 70px;
+    padding-left: 70px;
 }
 
 .footer-social-media-header {
@@ -621,6 +621,71 @@ footer {
 
 .footer-social-media-div:nth-child(1) {
     margin-left: 0px;
+}
+
+.newsletter-container {
+    display: inline-block;
+    padding-left: 70px;
+}
+
+.newsletter-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-header {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.newsletter-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 358px;
+    height: 50px;
+    background-color: rgba(47, 48, 58, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-button {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    background-color: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: rgba(255, 255, 255, 1);
+    margin: auto;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover {
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.submit-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-icon-send {
+    width: 24px;
+    height: 24px;
 }
 
 .modal {
