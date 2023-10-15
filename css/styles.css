@@ -74,26 +74,15 @@ header {
     padding-left: 0px;
 }
 
-.header-buttons, .nav-contact-buttons {
+.header-buttons {
     font-weight: 500;
     font-size: 14px;
-    font-weight: 500;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-contact-buttons {
-    color: rgba(117, 117, 117, 1);
-}
-
-.nav-contact-buttons:nth-child(1) {
-    display: inline-block;
-    margin-right: 30px;
 }
 
 .icon-envelope {
     width: 16px;
     height: 12px;
-    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +92,6 @@ header {
 .icon-smartphone {
     width: 10px;
     height: 16px;
-    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,18 +104,28 @@ header {
     gap: 30px;
 }
 
-.email-contact-div, .phone-number-contact-div {
+.email-contact-li, .phone-number-contact-li {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: rgba(117, 117, 117, 1);
+    gap: 10px;
 }
 
-.email-contact-div:hover,
-.phone-number-contact-div:hover {
-    fill: var(--blue);
+.nav-contact-buttons {
+    color: rgba(117, 117, 117, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-contact-buttons:hover {
+    fill: var(--blue);
 }
 
 .solutions-section {
