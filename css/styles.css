@@ -112,9 +112,8 @@ header {
 
 .contact-buttons-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .email-contact-div, .phone-number-contact-div {
@@ -123,10 +122,6 @@ header {
     align-items: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: rgba(117, 117, 117, 1);
-}
-
-.phone-number-contact-div {
-    padding-left: 30px;
 }
 
 .email-contact-div:hover,
@@ -630,24 +625,29 @@ footer {
 
 .newsletter-header-container {
     display: flex;
-    align-items: center;
 }
 
 .newsletter-header {
     color: white;
     font-size: 14px;
-    font-weight: 700;
-    display: inline-block;
-    padding-bottom: 20px;
 }
 
 .newsletter-form-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row;
 }
 
-.form {
+.footer-form {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-input-button {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-input {
     width: 358px;
     height: 50px;
     background-color: rgba(47, 48, 58, 1);
@@ -656,10 +656,14 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-input::placeholder {
+    padding: 15px 16px;
+}
+
 .submit-button {
     font-weight: 700;
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     background-color: rgba(33, 150, 243, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -670,6 +674,7 @@ footer {
     color: rgba(255, 255, 255, 1);
     margin: auto;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .submit-button:hover {
@@ -686,6 +691,7 @@ footer {
 .icon-icon-send {
     width: 24px;
     height: 24px;
+    position: absolute;
 }
 
 .modal {
@@ -707,7 +713,7 @@ footer {
     position: relative;
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 8px;
+    padding: 40px;
     border: 1px solid #888;
     width: 528px;
     height: 581px;
@@ -750,9 +756,9 @@ footer {
     gap: 10px;
 }
 
-input {
+#name, #email, #telephone {
     height: 40px;
-    padding: 11px 12px 11px 42px;
+    padding-left: 42px;
 }
 
 textarea {
@@ -761,6 +767,7 @@ textarea {
 }
 
 textarea::placeholder {
+    font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -780,20 +787,28 @@ textarea::placeholder {
     width: 18px;
     height: 18px;
     position: absolute;
+    top: calc(50% - 9px);
+    left: 12px;
 }
 
-input, textarea {
-    height: 40px;
+#name,
+#email,
+#telephone, textarea {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: none;
 }
 
-input:focus, textarea:focus {
+#name:focus,
+#email:focus,
+#telephone:focus, 
+textarea:focus {
     border: 1px solid rgba(33, 150, 243, 1);
 }
 
-input:focus + svg {
+#name,
+#email,
+#telephone:focus + svg {
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -804,4 +819,31 @@ input:focus + svg {
     letter-spacing: 0.01em;
     text-align: left;
     color: rgba(117, 117, 117, 1);
+}
+
+.send-button {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: rgba(255, 255, 255, 1);
+    margin: auto;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button:hover {
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.send-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
