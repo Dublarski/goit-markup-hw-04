@@ -384,10 +384,12 @@
                 placeholder="E-mail"
               />
               <div>
-                <input type="submit" class="submit-button" />
-                <svg class="icon icon-icon-send">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
+                <button type="submit" class="subscribe-button">
+                  <span>Subscribe</span>
+                  <svg class="icon icon-icon-send">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </form>
@@ -452,6 +454,22 @@
           <div class="input-container">
             <label class="form-label">Comments</label>
             <textarea placeholder="Enter the text"></textarea>
+          </div>
+
+          <div class="input-container terms-and-conditions-container">
+            <label class="terms-and-conditions">
+              <input
+                type="checkbox"
+                name="terms-and-conditions"
+                value="Checked"
+              />
+              <span
+                >I agree with the letter and accept the
+                <a href="" class="terms-and-conditions-button"
+                  >Terms and Conditions</a
+                ></span
+              >
+            </label>
           </div>
           <input type="submit" value="Send" class="send-button" />
         </form>

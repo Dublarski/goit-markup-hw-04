@@ -642,6 +642,7 @@ footer {
 
 .footer-input-button {
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 
@@ -658,7 +659,7 @@ footer {
     padding: 15px 16px;
 }
 
-.submit-button {
+.subscribe-button {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -673,15 +674,25 @@ footer {
     margin: auto;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.submit-button:hover {
+.subscribe-button svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe-button:hover {
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.3);
     color: white;
     transform: translateY(-3px);
 }
 
-.submit-button:active {
+.subscribe-button:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -762,6 +773,7 @@ footer {
 textarea {
     height: 120px;
     padding: 12px 16px;
+    resize: none;
 }
 
 textarea::placeholder {
@@ -817,6 +829,26 @@ textarea:focus {
     letter-spacing: 0.01em;
     text-align: left;
     color: rgba(117, 117, 117, 1);
+}
+
+.terms-and-conditions-button {
+    text-decoration: underline;
+    color: rgba(33, 150, 243, 1);
+}
+
+.terms-and-conditions {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.terms-and-conditions span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
 .send-button {
