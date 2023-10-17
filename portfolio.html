@@ -36,28 +36,24 @@
           </li>
         </ul>
       </nav>
-      <div class="contact-buttons-container">
-        <div class="email-contact-div">
-          <div class="nav-icons">
+      <ul class="contact-buttons-container">
+        <li class="email-contact-li">
+          <a href="mailto:info@devstudio.com" class="nav-contact-buttons">
             <svg class="icon icon-envelope">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-          </div>
-          <a href="mailto:info@devstudio.com" class="nav-contact-buttons"
-            >info@devstudio.com</a
-          >
-        </div>
-        <div class="phone-number-contact-div">
-          <div class="nav-icons">
+            <span>info@devstudio.com</span>
+          </a>
+        </li>
+        <li class="phone-number-contact-li">
+          <a href="tel:+12127724150" class="nav-contact-buttons">
             <svg class="icon icon-smartphone">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-          </div>
-          <a href="tel:+12127724150" class="nav-contact-buttons"
-            >+1 212-772-4150</a
-          >
-        </div>
-      </div>
+            <span>+1 212-772-4150</span>
+          </a>
+        </li>
+      </ul>
     </header>
     <!-- Main Section -->
     <main>
@@ -252,6 +248,34 @@
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </div>
+        </div>
+      </div>
+      <div class="newsletter-container">
+        <div class="newsletter-header-container">
+          <h2 class="newsletter-header">SUBSCRIBE TO THE NEWSLETTER</h2>
+        </div>
+        <div class="newsletter-form-container">
+          <form class="footer-form">
+            <label for="email"></label>
+            <div class="footer-input-button">
+              <input
+                class="footer-input"
+                type="email"
+                id="email-footer"
+                name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="E-mail"
+              />
+              <div>
+                <button type="submit" class="subscribe-button">
+                  <span>Subscribe</span>
+                  <svg class="icon icon-icon-send">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
