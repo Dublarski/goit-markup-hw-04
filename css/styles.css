@@ -868,7 +868,6 @@ textarea:focus {
 
 input [type="checkbox"] {
   accent-color: rgba(33, 150, 243, 1);
-  border: 5px;
 }
 
 .send-button {
