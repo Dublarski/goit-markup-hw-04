@@ -843,6 +843,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
 .terms-and-conditions {
@@ -860,22 +861,14 @@ textarea:focus {
   color: rgba(117, 117, 117, 1);
 }
 
-.terms-and-conditions-label svg {
-  width: 13px;
-  height: 13px;
-}
-
-.terms-and-conditions-check:not(:checked) {
-  visibility: hidden;
-}
-
-.terms-and-conditions-check:checked + label > svg {
-  display: none;
-}
-
 .terms-and-conditions-button {
   color: rgba(33, 150, 243, 1);
   text-decoration: underline;
+}
+
+input [type="checkbox"] {
+  accent-color: rgba(33, 150, 243, 1);
+  border: 5px;
 }
 
 .send-button {
