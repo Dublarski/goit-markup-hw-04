@@ -843,7 +843,50 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
   gap: 8px;
+}
+
+.terms-and-conditions-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.icon-checkbox-div:hover ~ .icon-checkbox {
+  background-color: #2196f3;
+}
+
+.icon-checkbox-div::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.icon-checkbox-div:checked ~ .icon-checkbox-div::after {
+  display: block;
+}
+
+.icon-checkbox-div .icon-checkbox-div::after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+
+.icon-checkbox-div svg {
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0px;
+  position: relative;
+  background-color: #ccc;
 }
 
 .terms-and-conditions {
@@ -864,10 +907,6 @@ textarea:focus {
 .terms-and-conditions-button {
   color: rgba(33, 150, 243, 1);
   text-decoration: underline;
-}
-
-input [type="checkbox"] {
-  accent-color: rgba(33, 150, 243, 1);
 }
 
 .send-button {
